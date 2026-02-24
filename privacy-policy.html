@@ -107,6 +107,7 @@
       <li><strong>Dados de uso:</strong> Progresso nas trilhas e lições, pontuação XP, streaks, conquistas desbloqueadas e preferências do aplicativo.</li>
       <li><strong>Dados do dispositivo:</strong> Identificador do dispositivo, sistema operacional e versão do app, utilizados para fins técnicos e de diagnóstico.</li>
       <li><strong>Preferências:</strong> Configurações como horário de lembrete diário e preferências de notificação e som, armazenadas localmente no dispositivo.</li>
+      <li><strong>Token de notificação push:</strong> Identificador gerado pelo sistema operacional do dispositivo (via Expo Push Service, Firebase Cloud Messaging — FCM no Android, e Apple Push Notification service — APNs no iOS), utilizado exclusivamente para o envio de notificações autorizadas por você.</li>
     </ul>
 
     <h2>2. Como Usamos Seus Dados</h2>
@@ -121,7 +122,8 @@
     <h2>3. Compartilhamento de Dados</h2>
     <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins comerciais. Podemos compartilhar informações apenas nas seguintes situações:</p>
     <ul>
-      <li><strong>Provedores de serviço:</strong> Utilizamos o Supabase como plataforma de banco de dados e autenticação. Esses provedores processam dados somente conforme nossas instruções e estão sujeitos a obrigações de confidencialidade.</li>
+      <li><strong>Supabase:</strong> Plataforma de banco de dados e autenticação. Processa dados somente conforme nossas instruções e está sujeito a obrigações de confidencialidade.</li>
+      <li><strong>Expo / FCM / APNs:</strong> O roteamento de notificações push é intermediado pela Expo Push Service (Expo Inc.), pelo Firebase Cloud Messaging (Google LLC) e pelo Apple Push Notification service (Apple Inc.). Esses serviços recebem o token do dispositivo para entrega das notificações, sem acesso ao conteúdo dos seus dados pessoais.</li>
       <li><strong>Obrigação legal:</strong> Podemos divulgar informações quando exigido por lei ou por determinação judicial.</li>
     </ul>
 
@@ -129,7 +131,11 @@
     <p>Seus dados são armazenados em servidores seguros fornecidos pelo Supabase, com criptografia em trânsito (TLS) e em repouso. Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados contra acesso não autorizado, perda ou alteração.</p>
     <p>Configurações locais (como preferências de notificação) são armazenadas no dispositivo por meio do AsyncStorage do React Native e não são transmitidas para nossos servidores.</p>
 
-    <h2>5. Seus Direitos (LGPD)</h2>
+    <h2>5. Transferência Internacional de Dados</h2>
+    <p>O Supabase armazena dados em servidores da Amazon Web Services (AWS) localizados nos Estados Unidos e/ou na União Europeia. O Firebase Cloud Messaging (Google) e o Apple Push Notification service (Apple) também operam com infraestrutura global. Em todos os casos, são adotadas salvaguardas contratuais e técnicas adequadas, em conformidade com o Art. 33 da LGPD, garantindo nível de proteção equivalente ao exigido pela legislação brasileira.</p>
+    <p>Ao utilizar o aplicativo, você está ciente e consente com a transferência dos seus dados para esses países, nos termos descritos nesta Política.</p>
+
+    <h2>6. Seus Direitos (LGPD)</h2>
     <p>De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem os seguintes direitos:</p>
     <ul>
       <li>Confirmação da existência de tratamento dos seus dados.</li>
@@ -141,16 +147,16 @@
     </ul>
     <p>Para exercer qualquer desses direitos, entre em contato pelo e-mail abaixo.</p>
 
-    <h2>6. Retenção de Dados</h2>
+    <h2>7. Retenção de Dados</h2>
     <p>Mantemos seus dados pelo tempo em que sua conta estiver ativa. Após a exclusão da conta, os dados pessoais são removidos de nossos sistemas em até 30 dias, salvo obrigação legal de retenção.</p>
 
-    <h2>7. Crianças</h2>
+    <h2>8. Crianças</h2>
     <p>O aplicativo Bizzu é destinado a pessoas com 13 anos ou mais. Não coletamos intencionalmente dados de crianças menores de 13 anos. Se tomarmos conhecimento de que dados foram coletados sem consentimento apropriado, os excluiremos imediatamente.</p>
 
-    <h2>8. Alterações nesta Política</h2>
+    <h2>9. Alterações nesta Política</h2>
     <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando houver alterações significativas, notificaremos você por meio do aplicativo ou por e-mail. O uso continuado do app após as alterações constitui aceitação da nova versão.</p>
 
-    <h2>9. Contato</h2>
+    <h2>10. Contato</h2>
     <p>Dúvidas, solicitações ou exercício de direitos relacionados à privacidade:</p>
     <a class="contact-email" href="mailto:contato@empreendedor-iniciante.com.br">contato@empreendedor-iniciante.com.br</a>
     <p>Responsável pelo tratamento: <strong>Guilherme Cunha — Bizzu</strong></p>
