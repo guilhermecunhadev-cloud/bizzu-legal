@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade – Bizzu</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #F8FAFC;
+      color: #1E293B;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #7C62FF 0%, #5B39E6 100%);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header .brand { font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 8px; }
+    header h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+    header p { font-size: 13px; opacity: 0.75; }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+    .intro {
+      background: #fff;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #5B39E6;
+      margin: 32px 0 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    ul li {
+      font-size: 14px;
+      color: #475569;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #7C62FF;
+      font-weight: 700;
+    }
+    ul li strong { color: #1E293B; }
+    .contact-email {
+      display: inline-block;
+      font-weight: 700;
+      color: #5B39E6;
+      font-size: 15px;
+      margin: 4px 0 12px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #94A3B8;
+      padding: 24px;
+      border-top: 1px solid #E2E8F0;
+    }
+    footer a { color: #7C62FF; text-decoration: none; font-weight: 600; }
+    @media (max-width: 480px) {
+      header h1 { font-size: 20px; }
+      main { padding: 24px 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Bizzu</div>
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: fevereiro de 2026</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      A Bizzu ("nós", "nosso") respeita a sua privacidade e está comprometida em proteger os dados pessoais que
+      você compartilha conosco ao usar o aplicativo Bizzu. Esta Política de Privacidade descreve quais dados
+      coletamos, como os utilizamos e quais são os seus direitos.
+    </div>
+
+    <h2>1. Dados que Coletamos</h2>
+    <ul>
+      <li><strong>Dados de cadastro:</strong> Nome completo e endereço de e-mail fornecidos no momento do registro.</li>
+      <li><strong>Dados de uso:</strong> Progresso nas trilhas e lições, pontuação XP, streaks, conquistas desbloqueadas e preferências do aplicativo.</li>
+      <li><strong>Dados do dispositivo:</strong> Identificador do dispositivo, sistema operacional e versão do app, utilizados para fins técnicos e de diagnóstico.</li>
+      <li><strong>Preferências:</strong> Configurações como horário de lembrete diário e preferências de notificação e som, armazenadas localmente no dispositivo.</li>
+    </ul>
+
+    <h2>2. Como Usamos Seus Dados</h2>
+    <ul>
+      <li>Permitir o acesso e o funcionamento do aplicativo.</li>
+      <li>Salvar e sincronizar seu progresso de aprendizado.</li>
+      <li>Enviar notificações locais de lembrete (somente se você autorizar nas configurações do dispositivo).</li>
+      <li>Melhorar o conteúdo e a experiência do aplicativo por meio de análise de uso agregada e anônima.</li>
+      <li>Suporte ao usuário, quando você nos contata diretamente.</li>
+    </ul>
+
+    <h2>3. Compartilhamento de Dados</h2>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins comerciais. Podemos compartilhar informações apenas nas seguintes situações:</p>
+    <ul>
+      <li><strong>Provedores de serviço:</strong> Utilizamos o Supabase como plataforma de banco de dados e autenticação. Esses provedores processam dados somente conforme nossas instruções e estão sujeitos a obrigações de confidencialidade.</li>
+      <li><strong>Obrigação legal:</strong> Podemos divulgar informações quando exigido por lei ou por determinação judicial.</li>
+    </ul>
+
+    <h2>4. Armazenamento e Segurança</h2>
+    <p>Seus dados são armazenados em servidores seguros fornecidos pelo Supabase, com criptografia em trânsito (TLS) e em repouso. Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados contra acesso não autorizado, perda ou alteração.</p>
+    <p>Configurações locais (como preferências de notificação) são armazenadas no dispositivo por meio do AsyncStorage do React Native e não são transmitidas para nossos servidores.</p>
+
+    <h2>5. Seus Direitos (LGPD)</h2>
+    <p>De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem os seguintes direitos:</p>
+    <ul>
+      <li>Confirmação da existência de tratamento dos seus dados.</li>
+      <li>Acesso aos seus dados pessoais.</li>
+      <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
+      <li>Portabilidade dos seus dados a outro fornecedor de serviço.</li>
+      <li>Eliminação dos seus dados pessoais tratados com seu consentimento.</li>
+      <li>Revogação do consentimento a qualquer momento.</li>
+    </ul>
+    <p>Para exercer qualquer desses direitos, entre em contato pelo e-mail abaixo.</p>
+
+    <h2>6. Retenção de Dados</h2>
+    <p>Mantemos seus dados pelo tempo em que sua conta estiver ativa. Após a exclusão da conta, os dados pessoais são removidos de nossos sistemas em até 30 dias, salvo obrigação legal de retenção.</p>
+
+    <h2>7. Crianças</h2>
+    <p>O aplicativo Bizzu é destinado a pessoas com 13 anos ou mais. Não coletamos intencionalmente dados de crianças menores de 13 anos. Se tomarmos conhecimento de que dados foram coletados sem consentimento apropriado, os excluiremos imediatamente.</p>
+
+    <h2>8. Alterações nesta Política</h2>
+    <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando houver alterações significativas, notificaremos você por meio do aplicativo ou por e-mail. O uso continuado do app após as alterações constitui aceitação da nova versão.</p>
+
+    <h2>9. Contato</h2>
+    <p>Dúvidas, solicitações ou exercício de direitos relacionados à privacidade:</p>
+    <a class="contact-email" href="mailto:contato@bizzu.app">contato@bizzu.app</a>
+    <p>Responsável pelo tratamento: <strong>Guilherme Cunha — Bizzu</strong></p>
+  </main>
+
+  <footer>
+    <p>© 2026 Bizzu · Guilherme Cunha &nbsp;|&nbsp; <a href="terms-of-use.html">Termos de Uso</a></p>
+  </footer>
+</body>
+</html>
